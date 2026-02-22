@@ -24,7 +24,7 @@ public class RobotContainer {
         // LEFT STICK Y: Moves robot Forward/Backward
         () -> m_driverController.getLeftY() * 1, 
         // LEFT STICK X: Moves robot Left/Right (Strafing)
-        () -> m_driverController.getLeftX() * -1) 
+        () -> m_driverController.getLeftX() * 1) 
         // RIGHT STICK X: "Steering" - Makes wheels form a circle to rotate the robot
         .withControllerRotationAxis(() -> m_driverController.getRightX() * -1) 
         .deadband(OperatorConstants.DEADBAND)
